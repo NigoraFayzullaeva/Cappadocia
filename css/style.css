@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    color: #000;
+}
+a{
+    color: inherit;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    background-image: url('../images/header-bg.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+    font-size: 24px;
+    line-height: 28px;
+}
+.menu-list-item{
+    display: inline-block;
+}
+.menu-list-item + .menu-list-item{
+    margin-left: 52px;
+}
