@@ -43,7 +43,9 @@ body {
     font-size: 18px;
     line-height: 21px;
 }
-
+ul{
+    list-style: none;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -55,7 +57,8 @@ a {
     padding: 0 15px;
 }
 .page-section{
-    margin: 200px 0;
+    margin: 200px auto;
+    max-width: 1920px;
 }
 .title{
     font-size: 96px;
@@ -132,6 +135,50 @@ a {
     margin-right: 85px;
 }
 
-.fairy-tail{
-    
+.fairy-tail-slider{
+    width: 50%;
+}
+.slick-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.slick-prev{
+    left: 0;
+}
+.slick-next{
+    right: 0;
+}
+.fairy-tail-inner{
+    position: relative;
+}
+.fairy-tail-container{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.fairy-tail-body{
+    width: 50%;
+    margin-left: auto;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.fairy-tail-body-title{
+    font-family: 'RobotoCondensed-Regular';
+}
+.fairy-tail-text{
+    padding: 10px 0;
 }
