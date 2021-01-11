@@ -54,7 +54,26 @@ a {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.page-section{
+    margin: 200px 0;
+}
+.title{
+    font-size: 96px;
+    line-height: 128px;
+    font-family: 'balqis';
+    color: #E2AB3F;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+.title span{
+    color: #000;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'RobotoCondensed-LightItalic';
+    display: block;
+    margin-top: -30px;
+    margin-left: 185px;
+}
 .header {
     background-image: url('../images/header-bg.jpg');
     height: 100vh;
@@ -111,4 +130,8 @@ a {
     font-family: 'RobotoCondensed-LightItalic';
     margin-top: -66px;
     margin-right: 85px;
+}
+
+.fairy-tail{
+    
 }
