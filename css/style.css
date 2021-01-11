@@ -1,36 +1,114 @@
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
 }
-body{
+
+@font-face {
+    font-family: 'balqis';
+    src: url('../fonts/balqis.woff2') format('woff2'),
+        url('../fonts/balqis.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoCondensed-Light';
+    src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoCondensed-LightItalic';
+    src: url('../fonts/RobotoCondensed-LightItalic.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-LightItalic.woff') format('woff');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+}
+
+body {
     color: #000;
+    font-family: 'RobotoCondensed-Light';
+    font-size: 18px;
+    line-height: 21px;
 }
-a{
+
+a {
     color: inherit;
+    text-decoration: none;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.header{
+
+.header {
     background-image: url('../images/header-bg.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
 }
-.header-top{
+
+.header-top {
     display: flex;
     justify-content: space-between;
     padding-top: 72px;
     font-size: 24px;
     line-height: 28px;
+    font-family: 'RobotoCondensed-Regular';
 }
-.menu-list-item{
+
+.menu-list-item {
     display: inline-block;
 }
-.menu-list-item + .menu-list-item{
+
+.menu-list-item+.menu-list-item {
     margin-left: 52px;
+}
+.menu-list-link:hover{
+    text-decoration: underline;
+}
+.header-phone{
+    padding-left: 40px;
+    position: relative;
+
+}
+.header-phone::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/header-phone.svg);
+    width: 30px;
+    height: 30px;
+    left: 0;
+}
+.header-title{
+    padding-top: 152px;
+    text-align: center;
+    font-size: 250px;
+    line-height: 334px;
+    font-family: 'balqis';
+    font-weight: 300;
+}
+.header-title span{
+    display: block;
+    text-align: right;
+    font-size: 56px;
+    line-height: 66px;
+    font-family: 'RobotoCondensed-LightItalic';
+    margin-top: -66px;
+    margin-right: 85px;
 }
