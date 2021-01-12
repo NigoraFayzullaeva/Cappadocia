@@ -381,3 +381,66 @@ a {
     padding: 11px 45px;
     cursor: pointer;
 }
+.footer{
+    background-image: url(../images/footer-bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: 96px;
+    background-size: cover;
+}
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-text{
+    font-size: 86px;
+    font-family: 'balqis';
+    line-height: 115px;
+}
+.footer-contacts{
+    width: 356px;
+    height: 572px;
+    background-image: url(../images/baloon-footer.png);
+    text-align: center;
+}
+.footer-contacts-title{
+    font-size: 86px;
+    padding-top: 50px;
+    color: #E2AB3F;
+    line-height: 115px;
+    font-family: 'balqis';
+    margin-bottom: 50px;
+}
+.footer-phone,
+.footer-email{
+    padding-left: 40px;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-phone::before,
+.footer-email::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -5px;
+}
+.footer-phone::before{
+    background-image: url(../images/phone.svg);
+}
+.footer-email::before{
+    background-image: url(../images/mail.svg);
+}
+.footer-phone{
+    margin-bottom: 20px;
+}
+.footer-social{
+    margin-top: 38px;
+}
+.footer-social a{
+    margin: 0 7px;
+}
