@@ -312,6 +312,9 @@ a {
 }
 .contacts-content {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .contacts-inner {
@@ -351,4 +354,30 @@ a {
     line-height: 28px;
     font-size: 24px;
     margin-bottom: 50px;
+    font-family: 'RobotoCondensed-Regular';
+}
+.contacts-form-input{
+    border: 1px solid #e2ab3f;
+    display: block;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+    padding: 0 31px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'RobotoCondensed-Light';
+}
+.contacts-form-input::placeholder{
+    color: #000;
+}
+.contacts-form-btn{
+    font-family: 'RobotoCondensed-Light';
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    border: 1px solid #e2ab3f;
+    background-color: transparent;
+    padding: 11px 45px;
+    cursor: pointer;
 }
