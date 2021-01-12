@@ -222,3 +222,25 @@ a {
     width: 50%;
     padding-right: 55px;
 }
+.hotel-title span{
+    margin-left: 120px;
+}
+.hotel-inner{
+    display: flex;
+}
+.hotel-images{
+    margin-right: 100px;
+}
+.hotel-text{
+    margin-bottom: 20px;
+}
+.hotel-gallery{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel-gallery a{
+    margin-top: 50px;
+}
