@@ -295,7 +295,7 @@ a {
 
 .price-on {
     margin-right: 70px;
-    width: 530px;
+    max-width: 530px;
 }
 
 .price-list-item {
@@ -455,6 +455,18 @@ a {
         font-size: 50px;
         margin-top: -50px;
     }
+    .hotel-images{
+        height: 84vh;
+        margin-right: 60px;
+    }
+    
+
+}
+@media (max-width: 1128px){
+    .hotel-images{
+        display: none;
+    }
+    
 }
 @media (max-width: 991px){
     .page-section{
@@ -471,6 +483,20 @@ a {
         width: 100%;
         padding-left: 0;
     }
+    .footer-text {
+        font-size: 60px;
+    }
+    .contacts-images{
+        height: 78vh;
+    }
+    .contacts-date, 
+    .contacts-price {
+        font-size: 75px;
+    }
+    .hotel-gallery{
+        justify-content: space-around;
+    }
+
 }
 @media (max-width: 840px){
     .header-title{
@@ -491,6 +517,38 @@ a {
         width: 25px;
         height: 25px;
     }
+    .footer-contacts-title {
+        font-size: 70px;
+        margin-bottom: 23px;
+    }
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-contacts{
+        margin-bottom: -800px;
+    }
+    .footer-text{
+        line-height: 77px;
+    }
+    .contacts-date span, .contacts-price span {
+        margin-left: 95px;
+    }
+    .contacts-form-title {
+        font-size: 22px;
+}
+@media (max-width: 800px){
+    .contacts-images{
+        display: none;
+    }
+    .contacts-content{
+        width: 100%;
+    }
+    .contacts-price {
+        margin-bottom: 25px;
+    }
+    
 }
 @media (max-width: 600px){
     .header-top{
@@ -531,6 +589,31 @@ a {
     .fairy-tail-title span{
         margin-left: 110px;
     }
+    .footer-text {
+        font-size: 40px;
+    }
+    .contacts-date, .contacts-price {
+        font-size: 62px;
+    }
+    .price-inner{
+       flex-direction: column;
+    }
+    .price-on-title, 
+    .price-off-title {
+        margin-bottom: 23px;
+    }
+    .price {
+        background-image: none;
+    }
+    .price-list-item {
+        margin-bottom: 13px;
+    }
+    .price-title span {
+        margin-left: 75px;
+    }
+    .hotel-title span {
+        margin-left: 69px;
+    }
 }
 @media (max-width: 370px){
     .header-title{
@@ -552,5 +635,9 @@ a {
     }
     .title span{
         font-size: 20px;
+    }
+    .footer-contacts-title {
+        font-size: 51px;
+        margin-bottom: 9px;
     }
 }
